@@ -1,0 +1,18 @@
+Descargar: https://visualstudio.microsoft.com/es/visual-cpp-build-tools/
+
+Abrir el docker
+
+Comandos iniciales(solo una vez) en la carpeta del proyecto: 
+	npm install
+	npm run typesenseServer, y si hay errores de segmentation fault, borra la carpeta de datos con:
+		rd /s /q typesense-server-data-1c, y de ahí vuelve a ejecutar:
+			npm run typesenseServer
+
+
+Y si todo sale bien, para levantar el proyecto hay que hacer
+
+Para finalizar:
+	terminal 1: npm run typesenseServer
+	terminal 2: npm run populateTypesenseIndex
+	terminal 3: npm start
+
